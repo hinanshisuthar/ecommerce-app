@@ -7,6 +7,7 @@ export const SingleProductPage = () => {
     const { state } = useProduct();
     const prods = state.products;
 
+    // eslint-disable-next-line
     const getSingleProduct = (prods, id) => prods.find((prod) => prod.id == id)
     const product = getSingleProduct(prods, id)
 

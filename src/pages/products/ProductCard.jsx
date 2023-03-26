@@ -9,6 +9,7 @@ export const ProductCard = ({ product }) => {
         dispatch({ type: 'ADD_TO_CART', payload: product })
     }
 
+    // eslint-disable-next-line
     const exists = state.cart.some((prod) => prod.id == product.id)
 
     return (

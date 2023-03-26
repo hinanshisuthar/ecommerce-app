@@ -5,6 +5,7 @@ export const SingleProductCard = (product) => {
     const navigate = useNavigate();
     const { state, dispatch } = useProduct();
 
+    // eslint-disable-next-line
     const exists = state.cart.some((prod) => prod.id == product.id)
 
     return (
